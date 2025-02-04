@@ -9,12 +9,19 @@
 <body>
     <script>
         let a=prompt("num1");
+        var b=a;
         let result=0;
         while(a>0){
             result=result*10+(a%10);
             a=Math.floor(a/10);
         }
-        alert(result);
+        if(result==b){
+            alert("the number is palindrome "+result);
+        }
+        else{
+            alert("the number is not palindrome "+result);
+        }
+
         
 
     </script>
